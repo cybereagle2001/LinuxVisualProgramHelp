@@ -7,8 +7,11 @@ clone it by :
 change the directory :
 > cd /https://github.com/cybereagle2001/LinuxVisualProgramHelp.git
 
-compile the code:
-> gcc root.c
+Allow The Execution:
+> chmod +x Linuxhelp.out
 
 run :
-> chmod +x a.out && ./a.out
+> ./Linuxhelp.out
+
+If you had some problems do :
+
