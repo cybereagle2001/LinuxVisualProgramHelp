@@ -19,4 +19,8 @@ If you had some problems do :
 > gcc root.c
 > chmod +x a.out && ./a.out
 
-# Liscence
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/) ©LinuxVisualhelp.
+
+Original author : Oussama Ben Hadj Dahman (cybereagle2001)
