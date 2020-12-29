@@ -12,10 +12,10 @@ change the directory :
 > cd LinuxVisualProgramHelp
 
 Allow The Execution:
-> chmod +x Linuxhelp.out
+> chmod +x Linuxhelp
 
 run :
-> ./Linuxhelp.out
+> ./Linuxhelp
 
 If you had some problems do :
 
