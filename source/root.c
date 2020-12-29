@@ -105,7 +105,7 @@ void help(){
 	printf(" * cp : usage(cp <filename> <new directory link>) : copy and paste the file from one directory to another\n");
 	printf(" * rm : usage(rm <filename>) : remove the file\n");
 	printf(" * mkdir : usage(mkdir <NewDirectoryName>) : create a new directory\n");
-	printf(" * touch : usage (touch <filename>) : creating a new file in the directory");
+	printf(" * touch : usage (touch <filename>) : creating a new file in the directory\n");
 	scanf("%d",&v);
 	printf("Goodbye \n");
 	printf("Thank you for using STIA_Root. If you had any problem contact us on cybereagle592@gmail.com or github.com/cybereeagle2001\n");
@@ -130,7 +130,7 @@ void root(){
 	printf("    4) linux commands\n");
 	printf("    5) update the OS \n");
 	printf("    6) upgrade the OS \n");
-	printf("    7) cybereagle linux scripts");
+	printf("    7) cybereagle linux scripts\n");
 	printf("%s@STIAroot~$ ",&user);
 	scanf("%d",&menu);
 	if (menu == 1){
