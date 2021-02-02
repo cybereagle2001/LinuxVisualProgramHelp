@@ -19,9 +19,11 @@ run :
 
 If you had some problems do :
 
-> cd source
-> gcc root.c
-> chmod +x a.out && ./a.out
+> cd source 
+
+> gcc root.c -o LinuxHelp
+
+> chmod +x LinuxHelp && ./LinuxHelp
 
 ## License
 
