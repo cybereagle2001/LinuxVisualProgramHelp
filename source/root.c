@@ -3,6 +3,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+void exitc()
+{
+	system("clear");
+	printf("Goodbye\n");
+	printf("Thank you for useing STIA_Root. If you had any problem contact us on cybereagle592@gmail.com or on github.com/cybereagle2001");
+}
+
 void mine(){
 	system("clear");
 	int menu2;
@@ -13,20 +20,36 @@ void mine(){
     printf("   1) crypto \n");
 	printf("   2) STIA toolkit\n");
 	printf("   3) Kcah game\n");
+	printf("   4) CandyMath\n");
+	printf("   5) france-ioi\n");
+	printf("\n");
+	printf("   00) exit\n");
 	printf("STIALinuxHelp~$ ");
 	scanf("%d",&menu2);
-	if (menu2 == 1){
+	switch (menu2)
+	{
+	case 1:
 		system("sudo git clone https://github.com/cybereagle2001/Crypto.git");
-	}
-	if (menu2 == 2)
-	{
+		break;
+	case 2:
 		system("sudo git clone https://github.com/Secret-Tunisian-Information-Agency/STIA.git");
-	}
-	if (menu2 == 3)
-	{
+		break;
+	case 3:
 		system("sudo git clone https://github.com/cybereagle2001/Kcah.git");
-	}
-	
+		break;
+	case 4:
+		system("sudo git clone https://github.com/cybereagle2001/CandyMath");
+		break;
+	case 5:
+		system("sudo git clone https://github.com/cybereagle2001/france-ioi");
+		break;
+	case 00:
+		exitc();
+		break;
+	default:
+		mine();
+		break;
+	}	
 }
 
 void updater(){
@@ -69,8 +92,8 @@ void network_conf(){
 	printf("-------------------------------\n");
 	system("ifconfig");
 	scanf("%d",&x);
-        printf("Goodbye \n");
-        printf("Thank you for using STIA_Root. If you had any problem contact us on cybereagle592@gmail.com or github.com/cybereeagle2001\n");
+    printf("Goodbye \n");
+    printf("Thank you for using STIA_Root. If you had any problem contact us on cybereagle592@gmail.com or github.com/cybereeagle2001\n");
 }
 
 void directories(){
@@ -87,7 +110,7 @@ void directories(){
 }
 
 void help(){
-	int v;
+	char v;
 	system("clear");
 	printf("-----------------------------\n");
 	printf("    Hello in Linux help      \n");
@@ -105,10 +128,19 @@ void help(){
 	printf(" * cp : usage(cp <filename> <new directory link>) : copy and paste the file from one directory to another\n");
 	printf(" * rm : usage(rm <filename>) : remove the file\n");
 	printf(" * mkdir : usage(mkdir <NewDirectoryName>) : create a new directory\n");
-	printf(" * touch : usage (touch <filename>) : creating a new file in the directory\n");
-	scanf("%d",&v);
-	printf("Goodbye \n");
-	printf("Thank you for using STIA_Root. If you had any problem contact us on cybereagle592@gmail.com or github.com/cybereeagle2001\n");
+	printf(" * touch : usage (touch <filename>) : creating a new file in the directory\n\n");
+	printf("do you want to exit or go back ?(Y = exit/ N= go back): ");
+	v=getchar();
+	if (v =='Y'){
+		exitc();
+	}
+	else if (v == 'N')
+	{
+		root();	
+	}
+	else{
+		help();
+	}
 }
 
 void root(){
@@ -130,7 +162,7 @@ void root(){
 	printf("    4) linux commands\n");
 	printf("    5) update the OS \n");
 	printf("    6) upgrade the OS \n");
-	printf("    7) cybereagle linux scripts\n");
+	printf("    7) cybereagle2001 linux scripts\n");
 	printf("%s@STIAroot~$ ",&user);
 	scanf("%d",&menu);
 	if (menu == 1){
@@ -183,8 +215,6 @@ void main()
 		root();
 	}
 	else {
-		system("clear");
-		printf("Goodbye\n");
-		printf("Thank you for useing STIA_Root. If you had any problem contact us on cybereagle592@gmail.com or on github.com/cybereagle2001");
+		exitc();
 	}
 }
